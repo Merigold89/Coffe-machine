@@ -63,7 +63,7 @@ class CoffeeMachine:
         self.money = self.money - self.money
 
 
-def main_options():
+def main_options(coffee_machine):
     while True:
         action = input('\nWrite action (buy, fill, take, remaining, exit):\n')
         if action == 'buy':
@@ -78,5 +78,5 @@ def main_options():
             break
 
 
-coffee_machine = CoffeeMachine(400, 540, 120, 9, 550)
-main_options()
+#coffee_machine = CoffeeMachine(400, 540, 120, 9, 550)
+main_options(CoffeeMachine(400, 540, 120, 9, 550))
